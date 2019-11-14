@@ -15,4 +15,5 @@ blocks:
             - checkout
             - cache restore website-build
             - aws s3 sync "dist" "s3://tech-folk.co.za" --acl "bucket-owner-full-control" --cache-control no-store
+            - aws cloudfront create-invalidation --distribution-id E4LYF8SC65HC7 --paths "/*"
             - cache delete website-build
