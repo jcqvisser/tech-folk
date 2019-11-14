@@ -1,0 +1,18 @@
+version: v1.0
+name: Deploy Tech Folk
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Deploy
+    task:
+      secrets:
+        - name: aws-tech-folk
+      jobs:
+        - name: Copy to S3
+          commands:
+            - checkout
+            - cache restore website-build
+            - aws s3 sync "dist" "s3://tech-folk.co.za" --acl "bucket-owner-full-control" --cache-control no-store
+            - cache delete website-build
