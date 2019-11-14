@@ -2,7 +2,16 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Tech industry professionals come together and share their stories">
+    <meta name="keywords" content="#TechFolk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tech Folk</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="<%= htmlWebpackPlugin.files.chunks.styles.css %>"
@@ -10,7 +19,35 @@
   </head>
 
   <body>
-    <p> hello folks </p>
+
+    <header>
+      <div class="logo">
+        <p class="logo__angle_bracket">></p>
+        <p class="logo__title">Tech Folk</p>
+      </div>
+    </header>
+
+    <section>
+
+      <dl>
+        <dt>001 - Managing a Product and Exploring an Interpreter</dt>
+        <dd>
+          <ul>
+            <li>Wednesday, November 13, 2019</li>
+            <li>Signs, Symptoms and Empathy in Product Management</li>
+            <li>A Brief History of Ruby - An Exploration of How Ruby's Interpreter Has Changed over the Years</li>
+          </ul>
+        </dd>
+
+        <dt>002 - TBD</dt>
+        <dd>
+          <ul>
+            <li>Wednesday, December 11, 2019</li>
+          </ul>
+        </dd>
+      </dl>
+
+    </section>
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
