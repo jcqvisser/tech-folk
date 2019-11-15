@@ -31,9 +31,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, 'src', 'about.html'),
+      filename: './about.html',
+      inject: false,
+    }),
+    new HtmlWebPackPlugin({
       template: './src/index.html',
       inject: false,
     }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[name].[contenthash].css',
