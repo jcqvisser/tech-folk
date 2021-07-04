@@ -4,9 +4,9 @@ A website for a tech Meetup in Johannesburg, South Africa.
 
 A Place where tech industry professionals come together and share their stories.
 
--https://tech-folk.co.za- no longer exists
+~~https://tech-folk.co.za~~ no longer exists
 
--https://www.meetup.com/Tech-Folk/members/- no longer maintained
+~~https://www.meetup.com/Tech-Folk/members/~~ no longer maintained
 
 ## How to get this running
 
@@ -18,5 +18,5 @@ A Place where tech industry professionals come together and share their stories.
 
 ## Deployment
 
--The Tech Folk website is hosted on https://tech-folk.co.za-
--The master branch is automatically deployed using Semaphore (https://jcqvisser.semaphoreci.com/projects/tech-folk)-
+~~The Tech Folk website is hosted on https://tech-folk.co.za~~
+~~The master branch is automatically deployed using Semaphore (https://jcqvisser.semaphoreci.com/projects/tech-folk)~~
